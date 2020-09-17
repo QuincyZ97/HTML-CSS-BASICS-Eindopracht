@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8" />
+    <title>Synthwave- Contact</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+
+  </head>
+
+  <!--HEADER-->
+
+  <body>
+    <div class="maingrid">
+      <header>
+        <div class="logo" onclick="location.href='index.html';" style="cursor:pointer;">
+          <p>SynthWave</p><img src="Images/weblogo.png" alt="logo" width="48">
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="art.html">Art</a></li>
+            <li><a href="music.html">Music</a></li>
+            <li><a class="active" href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+
+
+      <!--CONTACT-->
+
+      <main class="contact-page">
+
+        <article class="contact-info">
+          <h1>CONTACT US!</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit reprehenderit adipisci iure. Autem
+            architecto
+            quasi quaerat eligendi dolores fugiat voluptas eos aliquam amet blanditiis corporis.</p>
+        </article>
+
+
+
+        <section class="contactform">
+
+          <form name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true">
+
+            <label for="flname">Full Name</label><br>
+            <input class="formdesign" type="text" name="flname" placeholder="John Wow" required><br>
+
+            <label for="phonenumber">Phone number</label><br>
+            <input class="formdesign" type="tel" name="phonenumber" placeholder="12 34567890"
+              pattern="[0-9]{2} [0-9]{8}" maxlength="12" required><br>
+
+            <label for="subject">Subject</label><br>
+            <div class="radiocontainer">
+              
+              <input type="radio" id="Feedback" name="subject" value="Feedback"> <label
+                for="Feedback">Feedback</label><br>
+
+              <input type="radio" id="Submissions" name="subject" value="Submissions"> <label
+                for="Submissions">Submissions</label><br>
+
+              <input type="radio" id="other" name="subject" value="other"> <label for="other">other</label>
+            </div><br>
+
+            <label for="email">Email</label><br>
+            <input class="formdesign" type="email" name="email" placeholder="JohnNose@email.com" required><br>
+
+            <label for="message">Message</label><br>
+            <textarea name="message" rows="10" cols="30" placeholder="Write your suggestions & questions here"
+              required></textarea><br>
+
+            <input class="contact-btn" type="submit">
+
+          </form>
+        </section>
+
+
+
+      </main>
+
+      <!--FOOTER-->
+
+      <footer>
+        <section class="footer-about">
+          <h3>ABOUT</h3>
+          <p>This website was designed and build by</p>
+          <p>Quincy Zinnemers</p>
+        </section>
+
+        <section class="footer-socials">
+          <h3>SOCIALS</h3>
+          <ul class="social-icons">
+            <li><a href='https://twitter.com/RetroSynthwave'><img src="Images/Social Icons/twitter.png" width="30px"
+                  alt="twitter"></a></li>
+            <li><a href='https://old.reddit.com/r/outrun/'><img src="Images/Social Icons/reddit.png" width="30px"
+                  alt="reddit"></a></li>
+            <li><a href='https://soundcloud.com/retro-synthwave'><img src="Images/Social Icons/soundcloud.png"
+                  width="30px" alt="soundcloud"></a></li>
+            <li><a href='https://www.instagram.com/synthwave1989/'><img src="Images/Social Icons/instagram.png"
+                  width="30px" alt="instagram"></a></li>
+            <li><a href='https://www.facebook.com/RetroSynthwave80/'><img src="Images/Social Icons/facebook.png"
+                  width="30px" alt="Facebook"></a></li>
+          </ul>
+        </section>
+
+        <section class="footer-info">
+          <h3>INFO</h3>
+          <p>Copyright © 2020 All Rights Reserved</p>
+          <p class="footer-outrun">SynthWave</p>
+        </section>
+      </footer>
+    </div>
+  </body>
+
+</html>
